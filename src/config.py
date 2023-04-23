@@ -65,7 +65,7 @@ class Arguments():
         self.parser.add_argument("--num_return_sequences", type=int, default=10, 
             help="Number of predictions to return for each inference pass.")
         self.parser.add_argument("--temperature", type=float, default=0.8, 
-            choices=[0.2, 0.6, 0.8], help="Temperature values attempted in the CodeGen paper.")
+            choices=[0.000001, 0.2, 0.6, 0.8], help="Temperature values attempted in the CodeGen paper.")
         self.parser.add_argument("--top_p", type=float, default=0.95, 
             help="Default top-p value used in the CodeGen paper.")
         
